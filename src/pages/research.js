@@ -15,6 +15,7 @@ const mainPageLinks = [
   { text: "งานวิจัย", url: "/research" },
   { text: "ประสบการณ์", url: "/experience" },
   { text: "สินค้า", url: "/pricing" },
+  { text: "บทความ", url: "/articles" },
 ]
 
 const Research = () => (

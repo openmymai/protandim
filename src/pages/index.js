@@ -12,10 +12,11 @@ import lineOrder from "../images/lineorder.gif"
 
 const mainPageLinks = [
   { text: "หน้าแรก", url: "/" },
-  { text: "ไลฟ์เวนเทจ", url: "lifevantage" },
-  { text: "งานวิจัย", url: "research" },
-  { text: "ประสบการณ์", url: "experience" },
-  { text: "สินค้า", url: "pricing" },
+  { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
+  { text: "งานวิจัย", url: "/research" },
+  { text: "ประสบการณ์", url: "/experience" },
+  { text: "สินค้า", url: "/pricing" },
+  { text: "บทความ", url: "/articles" },
 ]
 
 const IndexPage = () => (
