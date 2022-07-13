@@ -119,6 +119,21 @@ const Pricing = () => (
       <Col>
         <center>
           <StaticImage
+            src="../images/Bronze2.png"
+            loading="eager"
+            formats={["auto", "webp", "avif"]}
+            alt=""
+            style={{ marginBottom: `var(--space-3)` }}
+          />
+        </center>
+        <br />
+        <h5><b>ชุดดูแลลำไส้</b></h5>
+      </Col>
+    </Row>
+    <Row xs={1} md={1}>
+      <Col>
+        <center>
+          <StaticImage
             src="../images/ActivatedEssentialNew.png"
             loading="eager"
             formats={["auto", "webp", "avif"]}
@@ -177,7 +192,7 @@ const Pricing = () => (
         </center>
         <br />
         <h5><b>อาย เซรั่ม</b></h5>
-        <h6>คืนความสดชื่นและ สดใสให้แก่รอบดวงตา ด้วยนวัตกรรม Nrf2 ในการลดรอยคล้ำรอบดวงตา, 
+        <h6>คืนความสดชื่นและสดใสให้แก่รอบดวงตา ด้วยนวัตกรรม Nrf2 ในการลดรอยคล้ำรอบดวงตา, 
           คืนความกระชับแก่ผิว, และลดถุงใต้ตา ทำให้กล้ามเนื้อรอบดวงตากระชับขึ้น</h6>
       </Col>
       <Col>
