@@ -53,3 +53,27 @@ p {
   text-indent: 40px;
   text-align: justify;
 }
+
+li {
+  margin-bottom: calc(var(--space-4) / 2);
+}
+
+ol li,
+ul li {
+  padding-left: 0;
+}
+
+li > ol,
+li > ul {
+  margin-bottom: calc(var(--space-4) / 2);
+  margin-left: var(--space-4);
+  margin-top: calc(var(--space-4) / 2);
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
+
+li *:last-child {
+  margin-bottom: 0;
+}
