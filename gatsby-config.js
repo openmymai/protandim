@@ -3,7 +3,7 @@ module.exports = {
     title: `โปรแทนดิม`,
     description: `จุดเริ่มต้นเล็กๆสร้างฝันที่ยิ่งใหญ่`,
     author: `@openmymai`,
-    siteUrl: `https://openmymai.gatsbyjs.io/`,
+    siteUrl: `https://protandimth.gtsb.io/`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
