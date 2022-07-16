@@ -14,7 +14,6 @@ const mainPageLinks = [
   { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
   { text: "งานวิจัย", url: "/research" },
   { text: "ประสบการณ์", url: "/experience" },
-  { text: "บทความ", url: "/articles" },
 ]
 
 const Experience = () => (
@@ -40,8 +39,50 @@ const Experience = () => (
     </div>
     <h1 className={styles.textCenter}>จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่</h1>
     <hr />
-  
-    <h1 className={styles.textCenter}>โรคมะเร็ง</h1>
+    { /* First Row Update */ }
+    <Row xs={1} md={4}>
+      <Col>{/* 1 */}
+        <div className="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/wJQIutD_CXM"
+            title="Embed vdo"
+            allowFullScreen
+          />
+        </div>
+        <h6>มาเป็นพี่เลี้ยงเด็กในอเมริกาและทำงานร้านอาหาร ยังไม่พบฝันอันแท้จริง จนกระทั่งมาพบ #Nrf2</h6>
+      </Col>
+      <Col>{/* 2 */}
+        <div className="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/6M6woOE3qMk"
+            title="Embed vdo"
+            allowFullScreen
+          />
+        </div>
+        <h6>คุณตู่ Siwatayin Garner ทำงานนวดที่ฮาวาย หลังเลิกงานรู้สึกเหนื่อย หายใจไม่เต็ม นอนหลับยากที่สุด</h6>
+      </Col>
+      <Col>{/* 3 */}
+        <div className="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/kktX3XU7n4s"
+            title="Embed vdo"
+            allowFullScreen
+          />
+        </div>
+        <h6>บ้านหมุน ไมเกรน คุณแม่เลี้ยงเดี่ยว ฟังทางนี้</h6>
+      </Col>
+      <Col>{/* 4 */}
+        <div className="ratio ratio-16x9">
+          <iframe
+            src="https://www.youtube.com/embed/fW8ftIhSi7o"
+            title="Embed vdo"
+            allowFullScreen
+          />
+        </div>
+        <h6>ใครเป็น #ไมเกรน ใคนชอบ #ฟิลเลอร์ #โบท้อซ์ มาฟังอาจารย์จูนกันค่ะ</h6>
+      </Col>
+    </Row>
+    <hr />
     { /* First Row Cancer */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}
@@ -172,8 +213,6 @@ const Experience = () => (
       </Col>
     </Row>
     <hr />
-    
-    <h1 className={styles.textCenter}>โรคเบาหวาน</h1>
     { /* First Row Diabete */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}
@@ -262,8 +301,6 @@ const Experience = () => (
       </Col>
     </Row>
     <hr />
-
-    <h1 className={styles.textCenter}>โรคความดัน</h1>
     { /* First Row Hypertension */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}
@@ -308,8 +345,6 @@ const Experience = () => (
       </Col>
     </Row>
     <hr />
-
-    <h1 className={styles.textCenter}>อยากสวยต้องแอคติเวทด้วยโปรแทนดิม</h1>
     { /* First Row Beautiful */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}
@@ -354,8 +389,6 @@ const Experience = () => (
       </Col>
     </Row>
     <hr />
-
-    <h1 className={styles.textCenter}>โรคหัวใจ</h1>
     { /* First Row Heart */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}
@@ -400,8 +433,6 @@ const Experience = () => (
       </Col>
     </Row>
     <hr />
-
-    <h1 className={styles.textCenter}>โรคเส้นเลือดในสมอง</h1>
     { /* First Row Brain */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}
@@ -446,8 +477,6 @@ const Experience = () => (
       </Col>
     </Row>
     <hr />
-
-    <h1 className={styles.textCenter}>โรคไต</h1>
     { /* First Row Kidney */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}
@@ -492,7 +521,6 @@ const Experience = () => (
       </Col>
     </Row>
     <hr />
-    <h1 className={styles.textCenter}>อัมพฤกษ์ อัมพาต</h1>
     { /* First Row Paralysis */ }
     <Row xs={1} md={4}>
       <Col>{/* 1 */}

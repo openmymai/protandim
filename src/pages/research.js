@@ -14,7 +14,6 @@ const mainPageLinks = [
   { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
   { text: "งานวิจัย", url: "/research" },
   { text: "ประสบการณ์", url: "/experience" },
-  { text: "บทความ", url: "/articles" },
 ]
 
 const Research = () => (
