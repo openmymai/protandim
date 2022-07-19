@@ -16,6 +16,196 @@ const mainPageLinks = [
   { text: "ประสบการณ์", url: "/experience" },
 ]
 
+const experienceLinksUpdate = [
+  { 
+    text: "กชชม ดราศรี นักแสดง สไตล์ลิสต์ อยู่กับเรื่องสวยงามมาตลอด บอกว่า Nrf2 ทำให้ได้สวยงาม และแข็งแรงที่สุด",
+    url: "https://www.youtube.com/embed/q73Q0obpImU"
+  },
+  {
+    text: "มาเป็นพี่เลี้ยงเด็กในอเมริกาและทำงานร้านอาหาร ยังไม่พบฝันอันแท้จริง จนกระทั่งมาพบ #Nrf2",
+    url: "https://www.youtube.com/embed/wJQIutD_CXM"
+  },
+  {
+    text: "คุณตู่ Siwatayin Garner ทำงานนวดที่ฮาวาย หลังเลิกงานรู้สึกเหนื่อย หายใจไม่เต็ม นอนหลับยากที่สุด",
+    url: "https://www.youtube.com/embed/6M6woOE3qMk"
+  },
+  {
+    text: "บ้านหมุน ไมเกรน คุณแม่เลี้ยงเดี่ยว ฟังทางนี้",
+    url: "https://www.youtube.com/embed/kktX3XU7n4s"
+  },
+  {
+    text: "ใครเป็น #ไมเกรน ใคนชอบ #ฟิลเลอร์ #โบท้อกซ์ มาฟังอาจารย์จูนกันค่ะ",
+    url: "https://www.youtube.com/embed/fW8ftIhSi7o"
+  },
+]
+
+const experienceLinks = [
+  { 
+    text: "มะเร็งเต้านม มะเร็งรังไข่ ทั้งคีโม ทั้งฉายแสง ทั้งยา แต่กลับรุกรานมากขึ้น แล้วทำอย่างไรให้ตัวเองหาย?",
+    url: "https://www.youtube.com/embed/q73Q0obpImU"
+  },
+  {
+    text: "มะเร็ง 3 ชนิดในเวลา 5 ปี ลำไส้,ตับ,ท้อง เธอหยุดใช้เคมีหันมาหา Nrf2 Nrf1 ผ่านไป 8 เดือนเธอเป็นอย่างไร?",
+    url: "https://www.youtube.com/embed/0jPDvKaR_Fo"
+  },
+  {
+    text: "ข้อเข่าเสื่อม , ตาแห้ง, ริดสีดวงทวาร, มะเร็งลำไส้ใหญ่",
+    url: "https://www.youtube.com/embed/qHK9h6ZjJvU"
+  },
+  {
+    text: "มะเร็งตับ, หัวใจเต้นผิดจังหวะ, ต้อกระจก หายไปเพราะอะไร?",
+    url: "https://www.youtube.com/embed/gPpWTNG23Yg"
+  },
+  {
+    text: "มะเร็งที่ตับ หัวใจเต้นผิดจังหวะ ต้อกระจก คืนสู่ปกติได้อย่างไร? ใครมีปัญหานี้มาฟังกันค่ะ",
+    url: "https://www.youtube.com/embed/x0E5qvnoQfc"
+  },
+  {
+    text: "มะเร็งสายพันธุ์ GIS ที่ทางเดินอาหาร, มะเร็งตับ, มีก้อนเนื้อที่ท้องขนาด 2 กก., ตัดกระเพาะ",
+    url: "https://www.youtube.com/embed/BmpX75EcjrE"
+  },
+  {
+    text: "มะเร็งต่อมลูกหมาก หายได้อย่างไร โดย น.ท.อรรถพันธ์ ญาณกรธนาทรัพย์",
+    url: "https://www.youtube.com/embed/HrvjArYvEP0"
+  },
+  {
+    text: "มะเร็งปากมดลูก ระยะที่สาม เข้าระยะสี่ เธอทำอย่างไร จึงคืนสู่ปกติ",
+    url: "https://www.youtube.com/embed/5OFZ422EUH0"
+  },
+  {
+    text: "คุณ สุปราณี สมดุลยาวาทย์ แชร์ประสบการณ์ใช้ Protandim ที่เธอได้รับผลดีมากกว่ายี่สิบรายการ",
+    url: "https://www.youtube.com/embed/p1KVgSlQhsc"
+  },
+  {
+    text: "ไมเกรน, อ้วน, มะเร็ง, ปลอกประสาทอักเสบ",
+    url: "https://www.youtube.com/embed/Fg-d6MSs24A"
+  },
+  {
+    text: "ไต ฟอกไต เปลี่ยนไต มะเร็งตับ ทนทรมานมานาน ได้อย่างไร และ หลังจากใช้ Protandim ชีวิตเปลี่ยนอย่างไร",
+    url: "https://www.youtube.com/embed/HwGg3jQFlE0"
+  },
+  {
+    text: "โรคกล้ามเนื้อหัวใจอ่อนแรงเฉียบพลัน ที่เกิดขึ้นกับคุณแอ้ม จันทิรา เลือกการดูแลตัวเองด้วย Protandim",
+    url: "https://www.youtube.com/embed/D2MtMEXOgp4"
+  },
+  {
+    text: "โรคเบาหวาน คุณชูพัฒน์ สิริแสงพัฒน์ ป่วยกับโรคเบาหวานมานานถึง 14 ปี แต่แล้วก็หายขาด 100% จากโรคนี้",
+    url: "https://www.youtube.com/embed/C-En2zpcCbY"
+  },
+  {
+    text: "Highlight คุณชูพัฒน์ สิริแสงพัฒน์ เคยเป็นเบาหวาน นานถึง14 ปี EP.1",
+    url: "https://www.youtube.com/embed/3I719dSK0Cg"
+  },
+  {
+    text: "Highlight คุณชูพัฒน์ สิริแสงพัฒน์ เคยเป็นเบาหวาน นานถึง14 ปี EP.2",
+    url: "https://www.youtube.com/embed/gD2y2WjojTo"
+  },
+  {
+    text: "ภูมิแพ้ หลอดลมตีบ เบาหวาน เส้นเลือดสมองตีบ หัวใจโต หัวเข่าเสื่อมเส้นยึด",
+    url: "https://www.youtube.com/embed/8_PTLQbx7aw"
+  },
+  {
+    text: "หัวใจ ความดัน เบาหวาน",
+    url: "https://www.youtube.com/embed/QQnsRGIfTgI"
+  },
+  {
+    text: "ความดัน เบาหวาน กับ อดีตนักวิชาการขนส่งชำนาญการ กลุ่มกิจการระหว่างประเทศ กรมเจ้าท่า",
+    url: "https://www.youtube.com/embed/Arzzl8IyKCg"
+  },
+  {
+    text: "Covid-19 , งูสวัด ความดัน เบาหวาน หัวใจ ถูกปราบด้วยการใช้ Nrf2, Nrf1",
+    url: "https://www.youtube.com/embed/XhCM8Um4lGQ"
+  },
+  {
+    text: "โรคหัวใจล้มเหลว หัวใจโต เลือดคั่งในหัวใจ น้ำท่วมปอด ความดัน เบาหวาน หัวเข่าเสื่อม นิ้วล้อค ไม่มีแรง",
+    url: "https://www.youtube.com/embed/lKk_4lqwWy4"
+  },
+  {
+    text: "ปวดกระเบนเหน็บ กระดูกทับเส้นประสาท บ้านหมุน ไมเกรน ความดันโลหิตสูง คอเลสเตอรอล เข่าเสื่อม",
+    url: "https://www.youtube.com/embed/Mp2ifuQbtRY"
+  },
+  {
+    text: "โรคหลับใน ริดสีดวงทวาร ภูมิแพ้ ความดันต่ำ",
+    url: "https://www.youtube.com/embed/Or6NicR1J9Y"
+  },
+  {
+    text: "Covid-19 ,หอบ, กรดไหลย้อน, ภูมิแพ้, น้ำในหู, ความดันต่ำ,ไขมันในเลือดสูง,ไขมันพอกตับ,เก้าต์, ซึมเศร้า",
+    url: "https://www.youtube.com/embed/Vm7_UYred7o"
+  },
+  {
+    text: "ความดัน ไขมัน และอีกหลายปัญหาที่ควรรับฟังวีดีโอนี้",
+    url: "https://www.youtube.com/embed/Q119GYe5C8w"
+  },
+  {
+    text: "เพราะอยากสวย และ นอนไม่หลับ จึง Activate ด้วย Protandim",
+    url: "https://www.youtube.com/embed/aYzXltvJGPs"
+  },
+  {
+    text: "ปวดเมื่อย ทั่วร่างกาย คุณแม่เป็นอัมพฤกษ์ คุณพ่อเป็นเก๊าท์",
+    url: "https://www.youtube.com/embed/pjNrHSJH-Sc"
+  },
+  {
+    text: "โรคไทรอยด์ เป็นพิษ, ไฮปอร์ไทรอยด์",
+    url: "https://www.youtube.com/embed/hIpzhShAPq4"
+  },
+  {
+    text: "เพราะเคยเป็นผู้สื่อข่าวมานานกว่า 20 ปี บุกพิสูจน์และหาข้อมูลก่อน Activate ร่างกายตนเองเพื่อย้อนวัย",
+    url: "https://www.youtube.com/embed/4ky-unop5xw"
+  },
+  {
+    text: "โรคหัวใจล้มเหลว หัวใจโต เลือดคั่งในหัวใจ น้ำท่วมปอด",
+    url: "https://www.youtube.com/embed/E7hGacjBA68"
+  },
+  {
+    text: "โรคหลอดเลือดหัวใจอุดตัน, ก้อนเนื้องอกในมดลูก",
+    url: "https://www.youtube.com/embed/cQfKTKr-3zU"
+  },
+  {
+    text: "โรคกล้ามเนื้อหัวใจอ่อนแรงเฉียบพลัน ที่เกิดขึ้นกับคุณแอ้ม จันทิรา เลือกการดูแลตัวเองด้วย Protandim",
+    url: "https://www.youtube.com/embed/D2MtMEXOgp4"
+  },
+  {
+    text: "ป่วยทั้งครอบครัว มดลูกโต ลิ้นหัวใจปิดไม่สนิท ตะคริว เส้นเลือดขอด อ้วน ตาต้อกระจก เก๊าท์ กรดไหลย้อน",
+    url: "https://www.youtube.com/embed/R-wWj04KjYs"
+  },
+  {
+    text: "คุณสวัสดิ์ ผู้ป่วยเส้นเลือดในสมองแตก",
+    url: "https://www.youtube.com/embed/XyFVQfFsHts"
+  },
+  {
+    text: "เส้นเลือดใหญ่แตกในสมองที่คุณหมอไม่รักษาแต่ร่างกายตัวเองกลับเป็นหมอรักษาให้ตัวเองจนกลับลุกมาเดินได้",
+    url: "https://www.youtube.com/embed/gxg535j4YfM"
+  },
+  {
+    text: "ภูมิแพ้ หลอดลมตีบ เบาหวาน เส้นเลือดสมองตีบ หัวใจโต หัวเข่าเสื่อมเส้นยึด",
+    url: "https://www.youtube.com/embed/8_PTLQbx7aw"
+  },
+  {
+    text: "ไทรอยด์ เส้นเลือดตีบ โรคตับ อดนอน อ่อนเพลีย",
+    url: "https://www.youtube.com/embed/oTLtGagE5ag"
+  },
+  {
+    text: "โรคไตเรื้อรัง หอบหืด ท้องผูก อายุเธอเพียง 35 แต่ต้องฟอกไตมานานกว่า 2 ปี มาฟังเธอเล่ากันค่ะ",
+    url: "https://www.youtube.com/embed/l-2CDzFolUo"
+  },
+  {
+    text: "ตับ ไต Covid เม็ดเลือด คุณวศิน อารียเดช เลือก Activate(เปิดทางให้) ยีน รักษาร่างกายเองอย่างธรรมชาติ",
+    url: "https://www.youtube.com/embed/y2KRaahpg8g"
+  },
+  {
+    text: "ไต ฟอกไต เปลี่ยนไต มะเร็งตับ ทนทรมานมานาน ได้อย่างไร และ หลังจากใช้ Protandim ชีวิตเปลี่ยนอย่างไร",
+    url: "https://www.youtube.com/embed/HwGg3jQFlE0"
+  },
+  {
+    text: "Driving Syndrome ไต กรดไหลย้อน เอ็นร้อยหวาย ไมเกรน ลมดักในหัวใจ ลดความอ้วนไม่ลง",
+    url: "https://www.youtube.com/embed/aSlcW2xzjDc"
+  },
+  {
+    text: "อัมพฤกษ์ อัมพาต(สัญญาณ)คุณกุลดิช ลิดดิโลว์ เล่าการดูแลตัวเองด้วยวิธี Activate Cells (ไม่เลือกผ่าตัด)",
+    url: "https://www.youtube.com/embed/fNlouAS1IH0"
+  },
+]
+
 const Experience = () => (
   <Layout>
     <div className={styles.textCenter}>
@@ -39,531 +229,37 @@ const Experience = () => (
     </div>
     <h1 className={styles.textCenter}>จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่</h1>
     <hr />
-    { /* First Row Update */ }
+    {/* Update Experience */}
     <Row xs={1} md={4}>
+    {experienceLinksUpdate.map((link,i) => (
       <Col>{/* 1 */}
         <div className="ratio ratio-16x9">
           <iframe
-            src="https://www.youtube.com/embed/q73Q0obpImU"
+            src={link.url}
             title="Embed vdo"
             allowFullScreen
           />
         </div>
-        <h6>กชชม ดราศรี นักแสดง สไตล์ลิสต์ อยู่กับเรื่องสวยงามมาตลอด บอกว่า Nrf2 ทำให้ได้สวยงาม และแข็งแรงที่สุด</h6>
+        <h6>{link.text}</h6>
       </Col>
-      <Col>{/* 2 */}
-
-      </Col>
-      <Col>{/* 3 */}
-
-      </Col>
-      <Col>{/* 4 */}
-
-      </Col>
-    </Row>
-    { /* Second Row Update */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/wJQIutD_CXM"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>มาเป็นพี่เลี้ยงเด็กในอเมริกาและทำงานร้านอาหาร ยังไม่พบฝันอันแท้จริง จนกระทั่งมาพบ #Nrf2</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/6M6woOE3qMk"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>คุณตู่ Siwatayin Garner ทำงานนวดที่ฮาวาย หลังเลิกงานรู้สึกเหนื่อย หายใจไม่เต็ม นอนหลับยากที่สุด</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/kktX3XU7n4s"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>บ้านหมุน ไมเกรน คุณแม่เลี้ยงเดี่ยว ฟังทางนี้</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/fW8ftIhSi7o"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ใครเป็น #ไมเกรน ใคนชอบ #ฟิลเลอร์ #โบท้อซ์ มาฟังอาจารย์จูนกันค่ะ</h6>
-      </Col>
+    ))}
     </Row>
     <hr />
-    { /* First Row Cancer */ }
+    
+    {/* Existing Experience */}
     <Row xs={1} md={4}>
+    {experienceLinks.map((link,i) => (
       <Col>{/* 1 */}
         <div className="ratio ratio-16x9">
           <iframe
-            src="https://www.youtube.com/embed/wkvMkZFtOOg"
+            src={link.url}
             title="Embed vdo"
             allowFullScreen
           />
         </div>
-        <h6>มะเร็งเต้านม มะเร็งรังไข่ ทั้งคีโม ทั้งฉายแสง ทั้งยา แต่กลับรุกรานมากขึ้น แล้วทำอย่างไรให้ตัวเองหาย?</h6>
+        <h6>{link.text}</h6>
       </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/0jPDvKaR_Fo"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>มะเร็ง 3 ชนิดในเวลา 5 ปี ลำไส้,ตับ,ท้อง เธอหยุดใช้เคมีหันมาหา Nrf2 Nrf1 ผ่านไป 8 เดือนเธอเป็นอย่างไร?</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/qHK9h6ZjJvU"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ข้อเข่าเสื่อม , ตาแห้ง, ริดสีดวงทวาร, มะเร็งลำไส้ใหญ่</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/gPpWTNG23Yg"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>มะเร็งตับ, หัวใจเต้นผิดจังหวะ, ต้อกระจก หายไปเพราะอะไร?</h6>
-      </Col>
-    </Row>
-    { /* Second Row Cancer */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/x0E5qvnoQfc"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>มะเร็งที่ตับ หัวใจเต้นผิดจังหวะ ต้อกระจก คืนสู่ปกติได้อย่างไร? ใครมีปัญหานี้มาฟังกันค่ะ</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/BmpX75EcjrE"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>มะเร็งสายพันธุ์ GIS ที่ทางเดินอาหาร, มะเร็งตับ, มีก้อนเนื้อที่ท้องขนาด 2 กก., ตัดกระเพาะ</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/HrvjArYvEP0"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>มะเร็งต่อมลูกหมาก หายได้อย่างไร โดย น.ท.อรรถพันธ์ ญาณกรธนาทรัพย์</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/5OFZ422EUH0"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>มะเร็งปากมดลูก ระยะที่สาม เข้าระยะสี่ เธอทำอย่างไร จึงคืนสู่ปกติ</h6>
-      </Col>
-    </Row>
-    { /* Third Row Cancer */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/p1KVgSlQhsc"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>คุณ สุปราณี สมดุลยาวาทย์ แชร์ประสบการณ์ใช้ Protandim ที่เธอได้รับผลดีมากกว่ายี่สิบรายการ</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Fg-d6MSs24A"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ไมเกรน, อ้วน, มะเร็ง, ปลอกประสาทอักเสบ</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/HwGg3jQFlE0"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ไต ฟอกไต เปลี่ยนไต มะเร็งตับ ทนทรมานมานาน ได้อย่างไร และ หลังจากใช้ Protandim ชีวิตเปลี่ยนอย่างไร</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/D2MtMEXOgp4"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคกล้ามเนื้อหัวใจอ่อนแรงเฉียบพลัน ที่เกิดขึ้นกับคุณแอ้ม จันทิรา เลือกการดูแลตัวเองด้วย Protandim</h6>
-      </Col>
-    </Row>
-    <hr />
-    { /* First Row Diabete */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/C-En2zpcCbY"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคเบาหวาน คุณชูพัฒน์ สิริแสงพัฒน์ ป่วยกับโรคเบาหวานมานานถึง 14 ปี แต่แล้วก็หายขาด 100% จากโรคนี้</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/3I719dSK0Cg"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>Highlight คุณชูพัฒน์ สิริแสงพัฒน์ เคยเป็นเบาหวาน นานถึง14 ปี EP.1</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/gD2y2WjojTo"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>Highlight คุณชูพัฒน์ สิริแสงพัฒน์ เคยเป็นเบาหวาน นานถึง14 ปี EP.2</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/8_PTLQbx7aw"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ภูมิแพ้ หลอดลมตีบ เบาหวาน เส้นเลือดสมองตีบ หัวใจโต หัวเข่าเสื่อมเส้นยึด</h6>
-      </Col>
-    </Row>
-
-    { /* Second Row Diabete */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/QQnsRGIfTgI"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>หัวใจ ความดัน เบาหวาน</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Arzzl8IyKCg"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ความดัน เบาหวาน กับ อดีตนักวิชาการขนส่งชำนาญการ กลุ่มกิจการระหว่างประเทศ กรมเจ้าท่า</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/XhCM8Um4lGQ"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>Covid-19 , งูสวัด ความดัน เบาหวาน หัวใจ ถูกปราบด้วยการใช้ Nrf2, Nrf1</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/lKk_4lqwWy4"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคหัวใจล้มเหลว หัวใจโต เลือดคั่งในหัวใจ น้ำท่วมปอด ความดัน เบาหวาน หัวเข่าเสื่อม นิ้วล้อค ไม่มีแรง</h6>
-      </Col>
-    </Row>
-    <hr />
-    { /* First Row Hypertension */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Mp2ifuQbtRY"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ปวดกระเบนเหน็บ กระดูกทับเส้นประสาท บ้านหมุน ไมเกรน ความดันโลหิตสูง คอเลสเตอรอล เข่าเสื่อม</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Or6NicR1J9Y"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคหลับใน ริดสีดวงทวาร ภูมิแพ้ ความดันต่ำ</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Vm7_UYred7o"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>Covid-19 ,หอบ, กรดไหลย้อน, ภูมิแพ้, น้ำในหู, ความดันต่ำ,ไขมันในเลือดสูง,ไขมันพอกตับ,เก้าต์, ซึมเศร้า</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Q119GYe5C8w"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ความดัน ไขมัน และอีกหลายปัญหาที่ควรรับฟังวีดีโอนี้</h6>
-      </Col>
-    </Row>
-    <hr />
-    { /* First Row Beautiful */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/aYzXltvJGPs"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>เพราะอยากสวย และ นอนไม่หลับ จึง Activate ด้วย Protandim</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/pjNrHSJH-Sc"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ปวดเมื่อย ทั่วร่างกาย คุณแม่เป็นอัมพฤกษ์ คุณพ่อเป็นเก๊าท์</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/hIpzhShAPq4"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคไทรอยด์ เป็นพิษ, ไฮปอร์ไทรอยด์</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/4ky-unop5xw"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>เพราะเคยเป็นผู้สื่อข่าวมานานกว่า 20 ปี บุกพิสูจน์และหาข้อมูลก่อน Activate ร่างกายตนเองเพื่อย้อนวัย</h6>
-      </Col>
-    </Row>
-    <hr />
-    { /* First Row Heart */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/E7hGacjBA68"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคหัวใจล้มเหลว หัวใจโต เลือดคั่งในหัวใจ น้ำท่วมปอด</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/cQfKTKr-3zU"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคหลอดเลือดหัวใจอุดตัน, ก้อนเนื้องอกในมดลูก</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/D2MtMEXOgp4"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคกล้ามเนื้อหัวใจอ่อนแรงเฉียบพลัน ที่เกิดขึ้นกับคุณแอ้ม จันทิรา เลือกการดูแลตัวเองด้วย Protandim</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/R-wWj04KjYs"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ป่วยทั้งครอบครัว มดลูกโต ลิ้นหัวใจปิดไม่สนิท ตะคริว เส้นเลือดขอด อ้วน ตาต้อกระจก เก๊าท์ กรดไหลย้อน</h6>
-      </Col>
-    </Row>
-    <hr />
-    { /* First Row Brain */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/XyFVQfFsHts"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>คุณสวัสดิ์ ผู้ป่วยเส้นเลือดในสมองแตก</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/gxg535j4YfM"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>เส้นเลือดใหญ่แตกในสมองที่คุณหมอไม่รักษาแต่ร่างกายตัวเองกลับเป็นหมอรักษาให้ตัวเองจนกลับลุกมาเดินได้</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/8_PTLQbx7aw"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ภูมิแพ้ หลอดลมตีบ เบาหวาน เส้นเลือดสมองตีบ หัวใจโต หัวเข่าเสื่อมเส้นยึด</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/oTLtGagE5ag"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ไทรอยด์ เส้นเลือดตีบ โรคตับ อดนอน อ่อนเพลีย</h6>
-      </Col>
-    </Row>
-    <hr />
-    { /* First Row Kidney */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/l-2CDzFolUo"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>โรคไตเรื้อรัง หอบหืด ท้องผูก อายุเธอเพียง 35 แต่ต้องฟอกไตมานานกว่า 2 ปี มาฟังเธอเล่ากันค่ะ</h6>
-      </Col>
-      <Col>{/* 2 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/y2KRaahpg8g"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ตับ ไต Covid เม็ดเลือด คุณวศิน อารียเดช เลือก Activate(เปิดทางให้) ยีน รักษาร่างกายเองอย่างธรรมชาติ</h6>
-      </Col>
-      <Col>{/* 3 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/HwGg3jQFlE0"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ไต ฟอกไต เปลี่ยนไต มะเร็งตับ ทนทรมานมานาน ได้อย่างไร และ หลังจากใช้ Protandim ชีวิตเปลี่ยนอย่างไร</h6>
-      </Col>
-      <Col>{/* 4 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/aSlcW2xzjDc"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>Driving Syndrome ไต กรดไหลย้อน เอ็นร้อยหวาย ไมเกรน ลมดักในหัวใจ ลดความอ้วนไม่ลง</h6>
-      </Col>
-    </Row>
-    <hr />
-    { /* First Row Paralysis */ }
-    <Row xs={1} md={4}>
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/fNlouAS1IH0"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>อัมพฤกษ์ อัมพาต(สัญญาณ)คุณกุลดิช ลิดดิโลว์ เล่าการดูแลตัวเองด้วยวิธี Activate Cells (ไม่เลือกผ่าตัด)</h6>
-      </Col>
-      <Col>{/* 2 */}
-
-      </Col>
-      <Col>{/* 3 */}
-
-      </Col>
-      <Col>{/* 4 */}
-
-      </Col>
+    ))}
     </Row>
     <hr />
 
