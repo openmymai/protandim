@@ -33,13 +33,13 @@ const experienceLinksUpdate = [
     text: "บ้านหมุน ไมเกรน คุณแม่เลี้ยงเดี่ยว ฟังทางนี้",
     url: "https://www.youtube.com/embed/kktX3XU7n4s"
   },
+]
+
+const experienceLinks = [
   {
     text: "ใครเป็น #ไมเกรน ใคนชอบ #ฟิลเลอร์ #โบท้อกซ์ มาฟังอาจารย์จูนกันค่ะ",
     url: "https://www.youtube.com/embed/fW8ftIhSi7o"
   },
-]
-
-const experienceLinks = [
   { 
     text: "มะเร็งเต้านม มะเร็งรังไข่ ทั้งคีโม ทั้งฉายแสง ทั้งยา แต่กลับรุกรานมากขึ้น แล้วทำอย่างไรให้ตัวเองหาย?",
     url: "https://www.youtube.com/embed/wkvMkZFtOOg"
