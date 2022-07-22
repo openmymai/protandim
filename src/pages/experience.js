@@ -42,7 +42,7 @@ const experienceLinksUpdate = [
 const experienceLinks = [
   { 
     text: "มะเร็งเต้านม มะเร็งรังไข่ ทั้งคีโม ทั้งฉายแสง ทั้งยา แต่กลับรุกรานมากขึ้น แล้วทำอย่างไรให้ตัวเองหาย?",
-    url: "https://www.youtube.com/embed/q73Q0obpImU"
+    url: "https://www.youtube.com/embed/wkvMkZFtOOg"
   },
   {
     text: "มะเร็ง 3 ชนิดในเวลา 5 ปี ลำไส้,ตับ,ท้อง เธอหยุดใช้เคมีหันมาหา Nrf2 Nrf1 ผ่านไป 8 เดือนเธอเป็นอย่างไร?",
