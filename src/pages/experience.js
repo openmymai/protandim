@@ -16,7 +16,7 @@ const mainPageLinks = [
   { text: "ประสบการณ์", url: "/experience" },
 ]
 
-const experienceLinksUpdate = [
+const experienceLinks = [
   {
     text: "คุณแม่ลูกสามหลังจาก Activate และหายจากไมเกรน จึงมองเห็นทางที่จะสานฝันของเธอ",
     url: "https://www.youtube.com/embed/S8b0DUFQ6oE"
@@ -33,9 +33,6 @@ const experienceLinksUpdate = [
     text: "คุณตู่ Siwatayin Garner ทำงานนวดที่ฮาวาย หลังเลิกงานรู้สึกเหนื่อย หายใจไม่เต็ม นอนหลับยากที่สุด",
     url: "https://www.youtube.com/embed/6M6woOE3qMk"
   },
-]
-
-const experienceLinks = [
   {
     text: "บ้านหมุน ไมเกรน คุณแม่เลี้ยงเดี่ยว ฟังทางนี้",
     url: "https://www.youtube.com/embed/kktX3XU7n4s"
@@ -233,24 +230,8 @@ const Experience = () => (
     </div>
     <h1 className={styles.textCenter}>จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่</h1>
     <hr />
-    {/* Update Experience */}
-    <Row xs={1} md={4}>
-    {experienceLinksUpdate.map((link,i) => (
-      <Col>{/* 1 */}
-        <div className="ratio ratio-16x9">
-          <iframe
-            src={link.url}
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>{link.text}</h6>
-      </Col>
-    ))}
-    </Row>
-    <hr />
     
-    {/* Existing Experience */}
+    {/* Experience */}
     <Row xs={1} md={4}>
     {experienceLinks.map((link,i) => (
       <Col>{/* 1 */}
