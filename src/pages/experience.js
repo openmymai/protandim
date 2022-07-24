@@ -17,6 +17,10 @@ const mainPageLinks = [
 ]
 
 const experienceLinksUpdate = [
+  {
+    text: "คุณแม่ลูกสามหลังจาก Activate และหายจากไมเกรน จึงมองเห็นทางที่จะสานฝันของเธอ",
+    url: "https://www.youtube.com/embed/S8b0DUFQ6oE"
+  },
   { 
     text: "กชชม ดราศรี นักแสดง สไตล์ลิสต์ อยู่กับเรื่องสวยงามมาตลอด บอกว่า Nrf2 ทำให้ได้สวยงาม และแข็งแรงที่สุด",
     url: "https://www.youtube.com/embed/q73Q0obpImU"
@@ -29,13 +33,13 @@ const experienceLinksUpdate = [
     text: "คุณตู่ Siwatayin Garner ทำงานนวดที่ฮาวาย หลังเลิกงานรู้สึกเหนื่อย หายใจไม่เต็ม นอนหลับยากที่สุด",
     url: "https://www.youtube.com/embed/6M6woOE3qMk"
   },
+]
+
+const experienceLinks = [
   {
     text: "บ้านหมุน ไมเกรน คุณแม่เลี้ยงเดี่ยว ฟังทางนี้",
     url: "https://www.youtube.com/embed/kktX3XU7n4s"
   },
-]
-
-const experienceLinks = [
   {
     text: "ใครเป็น #ไมเกรน ใคนชอบ #ฟิลเลอร์ #โบท้อกซ์ มาฟังอาจารย์จูนกันค่ะ",
     url: "https://www.youtube.com/embed/fW8ftIhSi7o"
