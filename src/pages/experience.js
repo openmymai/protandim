@@ -38,7 +38,7 @@ const experienceLinks = [
     url: "https://www.youtube.com/embed/kktX3XU7n4s"
   },
   {
-    text: "ใครเป็น #ไมเกรน ใคนชอบ #ฟิลเลอร์ #โบท้อกซ์ มาฟังอาจารย์จูนกันค่ะ",
+    text: "ใครเป็น #ไมเกรน ใครชอบ #ฟิลเลอร์ #โบท้อกซ์ มาฟังอาจารย์จูนกันค่ะ",
     url: "https://www.youtube.com/embed/fW8ftIhSi7o"
   },
   { 
