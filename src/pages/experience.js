@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Row, Col, Image } from "react-bootstrap";
 
@@ -9,8 +9,6 @@ import * as styles from "../components/index.module.css";
 
 import lineOrder from "../images/lineorder.gif";
 
-import { experienceLinks } from "./data";
-
 const mainPageLinks = [
   { text: "หน้าแรก", url: "/" },
   { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
@@ -18,7 +16,20 @@ const mainPageLinks = [
   { text: "ประสบการณ์", url: "/experience" },
 ];
 
-const Experience = () => (
+const Experience = () => {
+  const data = useStaticQuery(graphql`
+  query ExperienceQuery {
+    allExperienceJson {
+      edges {
+        node {
+          src
+          desc
+        }
+      }
+    }
+  }
+`)
+  return (
   <Layout>
     <div className={styles.textCenter}>
     <Seo title="Experience" />
@@ -44,16 +55,16 @@ const Experience = () => (
     
     {/* Experience */}
     <Row xs={1} md={4}>       
-      {experienceLinks.map((link) => (
-        <Col key={link.src}>
+      {data.allExperienceJson.edges.map((edge) => (
+        <Col key={edge.node.src}>
           <div>
             <iframe
-              src={link.src}
+              src={edge.node.src}
               title="Embed vdo"
               allowFullScreen
             />
           </div>
-          <h6>{link.desc}</h6>
+          <h6>{edge.node.desc}</h6>
         </Col>
       ))}
     </Row>
@@ -84,6 +95,7 @@ const Experience = () => (
       </center>
     {/* Line Order Image */}
   </Layout>
-);
+  );
+};
 
 export default Experience;

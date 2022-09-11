@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Link } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Row, Col, Image } from "react-bootstrap";
 
@@ -9,8 +9,6 @@ import * as styles from "../components/index.module.css";
 
 import lineOrder from "../images/lineorder.gif";
 
-import { researchLinks } from "./data";
-
 const mainPageLinks = [
   { text: "หน้าแรก", url: "/" },
   { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
@@ -18,7 +16,22 @@ const mainPageLinks = [
   { text: "ประสบการณ์", url: "/experience" },
 ];
 
-const Research = () => (
+const Research = () => {
+  const data = useStaticQuery(graphql`
+    query ResearchQuery {
+      allResearchJson {
+        edges {
+          node {
+            src
+            desc
+          }
+        }
+      }
+    }
+  `)
+  console.log(data);
+  
+  return(
   <Layout>
     <div className={styles.textCenter}>
       <Seo title="Research" />
@@ -69,16 +82,16 @@ const Research = () => (
     </h1>
     {/* Research */}
     <Row xs={1} md={4}>       
-      {researchLinks.map((link, i) => (
-        <Col key={link.src}>
+      {data.allResearchJson.edges.map((edge, i) => (
+        <Col key={edge.node.src}>
           <div>
             <iframe
-              src={link.src}
+              src={edge.node.src}
               title="Embed vdo"
               allowFullScreen
             />
           </div>
-          <h6>{link.desc}</h6>
+          <h6>{edge.node.desc}</h6>
         </Col>
       ))}
     </Row>
@@ -111,6 +124,7 @@ const Research = () => (
     {/* Line Order Image */}
 
   </Layout>
-);
+  )
+};
 
 export default Research;

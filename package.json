@@ -15,13 +15,15 @@
     "gatsby-plugin-react-helmet": "^5.16.0",
     "gatsby-plugin-sharp": "^4.16.1",
     "gatsby-source-filesystem": "^4.16.0",
+    "gatsby-transformer-json": "^4.22.0",
     "gatsby-transformer-sharp": "^4.16.0",
     "gh-pages": "^4.0.0",
     "prop-types": "^15.8.1",
     "react": "^18.1.0",
     "react-bootstrap": "^2.4.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0"
+    "react-helmet": "^6.1.0",
+    "react-icons": "^4.4.0"
   },
   "devDependencies": {
     "prettier": "^2.6.2"
