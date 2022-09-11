@@ -237,9 +237,9 @@ const Experience = () => (
     
     {/* Experience */}
     <Row xs={1} md={4}>       
-      {experienceLinks.map((link, i) => (
-        <Col>
-          <div>
+      {experienceLinks.map((link) => (
+        <Col >
+          <div key={link.src}>
             <iframe
               src={link.src}
               title="Embed vdo"

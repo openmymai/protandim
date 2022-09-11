@@ -117,10 +117,10 @@ const Research = () => (
       </a>
     </h1>
     {/* Research */}
-        <Row xs={1} md={4}>       
-      {experienceLinks.map((link, i) => (
-        <Col>
-          <div>
+    <Row xs={1} md={4}>       
+      {researchLinks.map((link, i) => (
+        <Col key={i}>
+          <div key={link.src}>
             <iframe
               src={link.src}
               title="Embed vdo"
