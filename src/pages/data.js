@@ -51,8 +51,37 @@ export const researchLinks = [
 
 export const experienceLinks = [
     {
-    src:"https://www.youtube.com/embed/S8b0DUFQ6oE",
-    desc:"คุณแม่ลูกสามหลังจาก Activate และหายจากไมเกรน จึงมองเห็นทางที่จะสานฝันของเธอ"
+        src: "https://www.youtube.com/embed/YNkOpF_OKkg",
+        desc: "หัวใจรูมาติค ฮาร์ทดิซิส เดินเข้าออกโรงพยาบาล+ทานยา มาตั้งแต่เด็กจนถึงมหาวิทยาลัย"
+    },
+    {
+        src: "https://www.youtube.com/embed/Su585VoXVIA",
+        desc: "Collagen วิทยาศาสตร์ สำหรับท่านชาย"
+    },
+    {
+        src: "https://www.youtube.com/embed/M3v3pAZ7qII",
+        desc: "73 ยังแจ๋ว พี่ต้อย Hathi Coronado จาก Boca Raton, Florida USA"
+    },
+
+    {
+        src: "https://www.youtube.com/embed/ykbohI7Jzjs",
+        desc: "SLE ลงไต (โรคพุ่มพวง)"
+    },
+    {
+        src: "https://www.youtube.com/embed/pIp8pC9c8TA",
+        desc: "ไตเสื่อมระยะ 3 , หมอนรองกระดูกคอเสื่อม"
+    },
+    {
+        src: "https://www.youtube.com/embed/tzBUiMPJ698",
+        desc: "กรดไหลย้อน ขั้นรุนแรง"
+    },
+    {
+        src:"https://www.youtube.com/embed/pJHOvnquTLE",
+        desc:"จะดูแลเพื่อนมนุษย์ ให้ได้อย่างดีที่สุด เหมือนที่รักและดูแลตัวเอง"
+    },
+    {
+        src:"https://www.youtube.com/embed/S8b0DUFQ6oE",
+        desc:"คุณแม่ลูกสามหลังจาก Activate และหายจากไมเกรน จึงมองเห็นทางที่จะสานฝันของเธอ"
     },
     {
     src:"https://www.youtube.com/embed/q73Q0obpImU",
