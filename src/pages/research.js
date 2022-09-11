@@ -1,20 +1,71 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { Row, Col, Image } from "react-bootstrap"
+import * as React from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import { Row, Col, Image } from "react-bootstrap";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import * as styles from "../components/index.module.css";
 
-import lineOrder from "../images/lineorder.gif"
+import lineOrder from "../images/lineorder.gif";
 
 const mainPageLinks = [
   { text: "หน้าแรก", url: "/" },
   { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
   { text: "งานวิจัย", url: "/research" },
   { text: "ประสบการณ์", url: "/experience" },
-]
+];
+
+const researchLinks = [
+  {
+    src:"https://www.youtube.com/embed/sBx1xYu7dVo",
+    desc:"ตำนานการค้นพบ SOD และโปรแทนดิม"
+    },
+    {
+    src:"https://www.youtube.com/embed/Rr3Fr1Twq-Y",
+    desc:"ค่า p ตัวชี้วัดของงานวิจัยมีความสำคัญอย่างไร"
+    },
+    {
+    src:"https://www.youtube.com/embed/b1Xvnc2XdyU",
+    desc:"งานวิจัย การตีพิมพ์และ PubMed"
+    },
+    {
+    src:"https://www.youtube.com/embed/v8Fdu2ujy7w",
+    desc:"งานวิจัยลำดับที่ 1 ของโปรแทนดิม"
+    },
+    {
+    src:"https://www.youtube.com/embed/3yZnmq46W18",
+    desc: "งานวิจัย 10 งานวิจัย ของโปรแทนดิม"
+    },
+    {
+    src:"https://www.youtube.com/embed/8BH__btEGJE",
+    desc: "งานวิจัยลำดับที่ 11 - 20 ของโปรแทนดิม"
+    },
+    {
+    src:"https://www.youtube.com/embed/K2Gh0GfWttY",
+    desc:"งานวิจัยลำดับที่ 21-28 ของโปรแทนดิม"
+    },
+    {
+    src:"https://www.youtube.com/embed/3m9c8I8U2H8",
+    desc:"งานวิจัยของโปรแทนดิมที่เกี่ยวข้องกับการทำบายพาสหัวใจ Part 1"
+    },
+    {
+    src:"https://www.youtube.com/embed/6lAqy58DXAQ",
+    desc:"งานวิจัยของโปรแทนดิม โรคมะเร็งและโรคหัวใจ"
+    },
+    {
+    src:"https://www.youtube.com/embed/CAvXGsLXTqA",
+    desc:"งานวิจัยของโปรแทนดิมแสดงถึงการแนวทางที่ได้ผลของการใช้เพื่อป้องกันมะเร็ง"
+    },
+    {
+    src:"https://www.youtube.com/embed/sozDKur19Hc",
+    desc:"งานวิจัย และวิทยาศาสตร์ที่อยู่เบื้องหลังของผลิตภัณฑ์โปรแทนดิม"
+    },
+    {
+    src:"https://www.youtube.com/embed/qVTmHCXBBwU",
+    desc:"ไลฟ์เวนเทจกับงานวิจัยที่แตกต่าง"
+    },
+];
 
 const Research = () => (
   <Layout>
@@ -65,129 +116,22 @@ const Research = () => (
         </center>
       </a>
     </h1>
-    {/* Update Research */}
-    <Row xs={1} md={4}>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/sBx1xYu7dVo"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ตำนานการค้นพบ SOD และโปรแทนดิม</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/Rr3Fr1Twq-Y"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ค่า p ตัวชี้วัดของงานวิจัยมีความสำคัญอย่างไร</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/b1Xvnc2XdyU"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>งานวิจัย การตีพิมพ์และ PubMed</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/v8Fdu2ujy7w"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>งานวิจัยลำดับที่ 1 ของโปรแทนดิม</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/3yZnmq46W18"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>"งานวิจัย 10 งานวิจัย ของโปรแทนดิม</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/8BH__btEGJE"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>"งานวิจัยลำดับที่ 11 - 20 ของโปรแทนดิม</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/K2Gh0GfWttY"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>งานวิจัยลำดับที่ 21-28 ของโปรแทนดิม</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/3m9c8I8U2H8"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>งานวิจัยของโปรแทนดิมที่เกี่ยวข้องกับการทำบายพาสหัวใจ Part 1</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/6lAqy58DXAQ"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>งานวิจัยของโปรแทนดิม โรคมะเร็งและโรคหัวใจ</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/CAvXGsLXTqA"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>งานวิจัยของโปรแทนดิมแสดงถึงการแนวทางที่ได้ผลของการใช้เพื่อป้องกันมะเร็ง</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/sozDKur19Hc"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>งานวิจัย และวิทยาศาสตร์ที่อยู่เบื้องหลังของผลิตภัณฑ์โปรแทนดิม</h6>
-      </Col>
-      <Col>
-        <div className="ratio ratio-16x9">
-          <iframe
-            src="https://www.youtube.com/embed/qVTmHCXBBwU"
-            title="Embed vdo"
-            allowFullScreen
-          />
-        </div>
-        <h6>ไลฟ์เวนเทจกับงานวิจัยที่แตกต่าง</h6>
-      </Col>
+    {/* Research */}
+        <Row xs={1} md={4}>       
+      {experienceLinks.map((link, i) => (
+        <Col>
+          <div>
+            <iframe
+              src={link.src}
+              title="Embed vdo"
+              allowFullScreen
+            />
+          </div>
+          <h6>{link.desc}</h6>
+        </Col>
+      ))}
     </Row>
+
     <hr />
 
     <h4>สอบถามผ่านไลน์...คลิก</h4> 
@@ -216,6 +160,6 @@ const Research = () => (
     {/* Line Order Image */}
 
   </Layout>
-)
+);
 
-export default Research
+export default Research;
