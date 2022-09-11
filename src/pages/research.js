@@ -9,62 +9,13 @@ import * as styles from "../components/index.module.css";
 
 import lineOrder from "../images/lineorder.gif";
 
+import { researchLinks } from "./data";
+
 const mainPageLinks = [
   { text: "หน้าแรก", url: "/" },
   { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
   { text: "งานวิจัย", url: "/research" },
   { text: "ประสบการณ์", url: "/experience" },
-];
-
-const researchLinks = [
-  {
-    src:"https://www.youtube.com/embed/sBx1xYu7dVo",
-    desc:"ตำนานการค้นพบ SOD และโปรแทนดิม"
-    },
-    {
-    src:"https://www.youtube.com/embed/Rr3Fr1Twq-Y",
-    desc:"ค่า p ตัวชี้วัดของงานวิจัยมีความสำคัญอย่างไร"
-    },
-    {
-    src:"https://www.youtube.com/embed/b1Xvnc2XdyU",
-    desc:"งานวิจัย การตีพิมพ์และ PubMed"
-    },
-    {
-    src:"https://www.youtube.com/embed/v8Fdu2ujy7w",
-    desc:"งานวิจัยลำดับที่ 1 ของโปรแทนดิม"
-    },
-    {
-    src:"https://www.youtube.com/embed/3yZnmq46W18",
-    desc: "งานวิจัย 10 งานวิจัย ของโปรแทนดิม"
-    },
-    {
-    src:"https://www.youtube.com/embed/8BH__btEGJE",
-    desc: "งานวิจัยลำดับที่ 11 - 20 ของโปรแทนดิม"
-    },
-    {
-    src:"https://www.youtube.com/embed/K2Gh0GfWttY",
-    desc:"งานวิจัยลำดับที่ 21-28 ของโปรแทนดิม"
-    },
-    {
-    src:"https://www.youtube.com/embed/3m9c8I8U2H8",
-    desc:"งานวิจัยของโปรแทนดิมที่เกี่ยวข้องกับการทำบายพาสหัวใจ Part 1"
-    },
-    {
-    src:"https://www.youtube.com/embed/6lAqy58DXAQ",
-    desc:"งานวิจัยของโปรแทนดิม โรคมะเร็งและโรคหัวใจ"
-    },
-    {
-    src:"https://www.youtube.com/embed/CAvXGsLXTqA",
-    desc:"งานวิจัยของโปรแทนดิมแสดงถึงการแนวทางที่ได้ผลของการใช้เพื่อป้องกันมะเร็ง"
-    },
-    {
-    src:"https://www.youtube.com/embed/sozDKur19Hc",
-    desc:"งานวิจัย และวิทยาศาสตร์ที่อยู่เบื้องหลังของผลิตภัณฑ์โปรแทนดิม"
-    },
-    {
-    src:"https://www.youtube.com/embed/qVTmHCXBBwU",
-    desc:"ไลฟ์เวนเทจกับงานวิจัยที่แตกต่าง"
-    },
 ];
 
 const Research = () => (
