@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Row, Col, Image } from "react-bootstrap";
@@ -16,21 +16,66 @@ const mainPageLinks = [
   { text: "ประสบการณ์", url: "/experience" },
 ];
 
+
+
 const Research = () => {
   const data = useStaticQuery(graphql`
     query ResearchQuery {
       allResearchJson {
-        edges {
-          node {
+        nodes {
             src
             desc
           }
         }
       }
-    }
-  `)
-  console.log(data);
+  `);
   
+  const allResearch = data.allResearchJson.nodes
+  
+  const [ list, setList ] = useState([...allResearch.slice(0, 10)]);
+
+  const [ loadMore, setLoadMore ] = useState(false);
+
+  const [ hasMore, setHasMore ] = useState(allResearch.length > 10)
+
+  const loadRef = useRef();
+
+  const handleObserver = (entities) => {
+    const target = entities[0]
+    if (target.isIntersecting) {
+      setLoadMore(true)
+    }
+  }
+
+  useEffect(() => {
+    var options = {
+      root: null,
+      rootmargin: "20px",
+      threshold: 1.0,
+    }
+    const observer = new IntersectionObserver(handleObserver, options)
+    if (loadRef.current) {
+      observer.observe(loadRef.current)
+    }
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    if (loadMore && hasMore) {
+      const currentLength = list.length
+      const isMore = currentLength < allResearch.length
+      const nextResults = isMore
+        ? allResearch.slice(currentLength, currentLength + 10)
+        : []
+      setList([...list, ...nextResults])
+      setLoadMore(false)
+    }
+  }, [loadMore, hasMore]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const isMore = list.length < allResearch.length
+    setHasMore(isMore)
+  }, [list]) // eslint-disable-line react-hooks/exhaustive-deps
+
   return(
   <Layout>
     <div className={styles.textCenter}>
@@ -82,18 +127,21 @@ const Research = () => {
     </h1>
     {/* Research */}
     <Row xs={1} md={4}>       
-      {data.allResearchJson.edges.map((edge, i) => (
-        <Col key={edge.node.src}>
+      {list.map((research, i) => (
+        <Col key={research.src}>
           <div>
             <iframe
-              src={edge.node.src}
+              src={research.src}
               title="Embed vdo"
               allowFullScreen
             />
           </div>
-          <h6>{edge.node.desc}</h6>
+          <h6>{research.desc}</h6>
         </Col>
       ))}
+      <div ref={loadRef}>
+        {hasMore ? <p>Loading...</p> : <p>No more results</p>}
+      </div>
     </Row>
 
     <hr />

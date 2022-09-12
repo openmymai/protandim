@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState, useEffect, useRef} from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Row, Col, Image } from "react-bootstrap";
@@ -20,15 +20,60 @@ const Experience = () => {
   const data = useStaticQuery(graphql`
   query ExperienceQuery {
     allExperienceJson {
-      edges {
-        node {
+      nodes {
           src
           desc
         }
       }
     }
+  `);
+
+  const allExperience = data.allExperienceJson.nodes
+
+  const [ list, setList ] = useState([...allExperience.slice(0, 10)]);
+
+  const [ loadMore, setLoadMore ] = useState(false);
+
+  const [ hasMore, setHasMore ] = useState(allExperience.length > 10)
+
+  const loadRef = useRef();
+
+  const handleObserver = (entities) => {
+  const target = entities[0]
+  if (target.isIntersecting) {
+    setLoadMore(true)
   }
-`)
+  }
+
+  useEffect(() => {
+  var options = {
+    root: null,
+    rootmargin: "20px",
+    threshold: 1.0,
+  }
+  const observer = new IntersectionObserver(handleObserver, options)
+  if (loadRef.current) {
+    observer.observe(loadRef.current)
+  }
+  }, []) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+  if (loadMore && hasMore) {
+    const currentLength = list.length
+    const isMore = currentLength < allExperience.length
+    const nextResults = isMore
+      ? allExperience.slice(currentLength, currentLength + 10)
+      : []
+    setList([...list, ...nextResults])
+    setLoadMore(false)
+  }
+  }, [loadMore, hasMore]) // eslint-disable-line react-hooks/exhaustive-deps
+
+  useEffect(() => {
+    const isMore = list.length < allExperience.length
+    setHasMore(isMore)
+  }, [list]) // eslint-disable-line react-hooks/exhaustive-deps
+
   return (
   <Layout>
     <div className={styles.textCenter}>
@@ -55,18 +100,21 @@ const Experience = () => {
     
     {/* Experience */}
     <Row xs={1} md={4}>       
-      {data.allExperienceJson.edges.map((edge) => (
-        <Col key={edge.node.src}>
+      {list.map((experience) => (
+        <Col key={experience.src}>
           <div>
             <iframe
-              src={edge.node.src}
+              src={experience.src}
               title="Embed vdo"
               allowFullScreen
             />
           </div>
-          <h6>{edge.node.desc}</h6>
+          <h6>{experience.desc}</h6>
         </Col>
       ))}
+      <div ref={loadRef}>
+        {hasMore ? <p>Loading...</p> : <p>No more results</p>}
+      </div>
     </Row>
     <hr />
 
