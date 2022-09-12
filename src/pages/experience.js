@@ -102,7 +102,7 @@ const Experience = () => {
     <Row xs={1} md={4}>       
       {list.map((experience) => (
         <Col key={experience.src}>
-          <div>
+          <div className="ratio ratio-16x9">
             <iframe
               src={experience.src}
               title="Embed vdo"

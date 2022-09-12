@@ -129,7 +129,7 @@ const Research = () => {
     <Row xs={1} md={4}>       
       {list.map((research, i) => (
         <Col key={research.src}>
-          <div>
+          <div className="ratio ratio-16x9">
             <iframe
               src={research.src}
               title="Embed vdo"
