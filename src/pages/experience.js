@@ -113,7 +113,7 @@ const Experience = () => {
         </Col>
       ))}
       <div ref={loadRef}>
-        {hasMore ? <p>Loading...</p> : <p>No more results</p>}
+        {hasMore ? <p>Loading...</p> : <h3>Completed</h3>}
       </div>
     </Row>
     <hr />
