@@ -30,11 +30,11 @@ const Experience = () => {
 
   const allExperience = data.allExperienceJson.nodes
 
-  const [ list, setList ] = useState([...allExperience.slice(0, 10)]);
+  const [ list, setList ] = useState([...allExperience.slice(0, 12)]);
 
   const [ loadMore, setLoadMore ] = useState(false);
 
-  const [ hasMore, setHasMore ] = useState(allExperience.length > 10)
+  const [ hasMore, setHasMore ] = useState(allExperience.length > 12)
 
   const loadRef = useRef();
 
@@ -62,7 +62,7 @@ const Experience = () => {
     const currentLength = list.length
     const isMore = currentLength < allExperience.length
     const nextResults = isMore
-      ? allExperience.slice(currentLength, currentLength + 10)
+      ? allExperience.slice(currentLength, currentLength + 12)
       : []
     setList([...list, ...nextResults])
     setLoadMore(false)

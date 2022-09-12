@@ -32,11 +32,11 @@ const Research = () => {
   
   const allResearch = data.allResearchJson.nodes
   
-  const [ list, setList ] = useState([...allResearch.slice(0, 10)]);
+  const [ list, setList ] = useState([...allResearch.slice(0, 12)]);
 
   const [ loadMore, setLoadMore ] = useState(false);
 
-  const [ hasMore, setHasMore ] = useState(allResearch.length > 10)
+  const [ hasMore, setHasMore ] = useState(allResearch.length > 12)
 
   const loadRef = useRef();
 
@@ -64,7 +64,7 @@ const Research = () => {
       const currentLength = list.length
       const isMore = currentLength < allResearch.length
       const nextResults = isMore
-        ? allResearch.slice(currentLength, currentLength + 10)
+        ? allResearch.slice(currentLength, currentLength + 12)
         : []
       setList([...list, ...nextResults])
       setLoadMore(false)
