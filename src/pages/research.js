@@ -139,6 +139,9 @@ const Research = () => {
           <h6>{research.desc}</h6>
         </Col>
       ))}
+    <div ref={loadRef}>
+        {hasMore ? <p>Loading...</p> : <p></p>}
+    </div>
     </Row>
     <hr />
 
