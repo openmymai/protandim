@@ -113,9 +113,6 @@ const Experience = () => {
         </Col>
       ))}
     </Row>
-    <div ref={loadRef}>
-        {hasMore ? <div><br /><h3>Loading...</h3></div> : <div><br /><h3>Completed</h3></div>}
-    </div>
     <hr />
 
     <h4>สอบถามผ่านไลน์...คลิก</h4> 
