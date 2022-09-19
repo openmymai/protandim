@@ -1,8 +1,7 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import { Link } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Row, Col, Image } from "react-bootstrap";
-import Typed from "typed.js";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -10,60 +9,11 @@ import * as styles from "../components/index.module.css";
 
 import lineOrder from "../images/lineorder.gif";
 
-const mainPageLinks = [
-  { text: "หน้าแรก", url: "/" },
-  { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
-  { text: "งานวิจัย", url: "/research" },
-  { text: "ประสบการณ์", url: "/experience" },
-];
-
 const Lifevantage = () => {
-  const el = useRef(null)
-  const typed = useRef(null)
-  useEffect(() => {
-    const options = {
-      strings: [
-        `จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่`,
-        `วิทยาศาสตร์พิสูจน์ผลของการค้นคว้า Protandim® Nrf2 Synergizer®`,
-        `ซึ่งเป็นครั้งแรกที่ LifeVantage พัฒนาขึ้นและสร้างการเปลี่ยนแปลง`
-      ],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true,
-    };
-    typed.current = new Typed(el.current, options)
-
-    return () => {
-      typed.current.destroy()
-    }
-  },[]);
-
   return (
   <Layout>
-    <div className={styles.textCenter}>
     <Seo title="LifeVantage" />
-      <div className={styles.intro}>
-          {mainPageLinks.map((link, i) => (
-            <React.Fragment key={link.url}>
-              <Link to={link.url}>{link.text}</Link>
-              {i !== mainPageLinks.length - 1 && <> · </>}
-            </React.Fragment>
-          ))}
-      </div>
-      <StaticImage
-        src="../images/LFVNFullLogo.jpg"
-        loading="eager"
-        width={800}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-    </div>
-    <div className="text">
-      <center><h3><span style={{whiteSpace: 'pre'}} ref={el} /></h3></center>
-    </div>
-    <hr />
-    
+        
     <p><h4 style={{display: "inline-block"}}>ไลฟ์เวนเทจ</h4> เป็นบริษัทฯ ที่จดทะเบียนและจำหน่ายผลิตภัณฑ์เสริมอาหาร 
     เริ่มต้นตั้งแต่ปี 2003 ที่มลรัฐยูท่าห์ ประเทศสหรัฐอเมริกา ต่อมาได้เปลี่ยนรูปแบบการดำเนินธุรกิจจากการค้าปลีกมาสู่การตลาดเครือข่าย
     ในปี 2009 ซึ่งเป็นวิธีที่เหมาะสำหรับการจัดจำหน่าย และแบ่งปันเรื่องราวของดีๆของบริษัทสู่ผู้คนได้ทั่วโลกและขยายการตลาดได้อย่างรวดเร็ว 

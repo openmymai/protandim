@@ -1,43 +1,14 @@
 import React, { useState, useEffect, useRef} from "react";
-import { Link, useStaticQuery, graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Row, Col, Image } from "react-bootstrap";
-import Typed from "typed.js";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
-import * as styles from "../components/index.module.css";
 
 import lineOrder from "../images/lineorder.gif";
 
-const mainPageLinks = [
-  { text: "หน้าแรก", url: "/" },
-  { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
-  { text: "งานวิจัย", url: "/research" },
-  { text: "ประสบการณ์", url: "/experience" },
-];
-
 const Experience = () => {
-  const el = useRef(null)
-  const typed = useRef(null)
-  useEffect(() => {
-    const options = {
-      strings: [
-        `จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่`,
-        `วิทยาศาสตร์พิสูจน์ผลของการค้นคว้า Protandim® Nrf2 Synergizer®`,
-        `ซึ่งเป็นครั้งแรกที่ LifeVantage พัฒนาขึ้นและสร้างการเปลี่ยนแปลง`
-      ],
-      typeSpeed: 50,
-      backSpeed: 30,
-      loop: true,
-    };
-    typed.current = new Typed(el.current, options)
-
-    return () => {
-      typed.current.destroy()
-    }
-  },[]);
-  
   const data = useStaticQuery(graphql`
   query ExperienceQuery {
     allExperienceJson {
@@ -97,30 +68,8 @@ const Experience = () => {
 
   return (
   <Layout>
-    <div className={styles.textCenter}>
     <Seo title="Experience" />
-      <div className={styles.intro}>
-          {mainPageLinks.map((link, i) => (
-            <React.Fragment key={link.url}>
-              <Link to={link.url}>{link.text}</Link>
-              {i !== mainPageLinks.length - 1 && <> · </>}
-            </React.Fragment>
-          ))}
-      </div>
-      <StaticImage
-        src="../images/LFVNFullLogo.jpg"
-        loading="eager"
-        width={800}
-        formats={["auto", "webp", "avif"]}
-        alt=""
-        style={{ marginBottom: `var(--space-3)` }}
-      />
-    </div>
-    <div className="text">
-      <center><h3><span style={{whiteSpace: 'pre'}} ref={el} /></h3></center>
-    </div>
-    <hr />
-    
+  
     {/* Experience */}
     <Row xs={1} md={4}>       
       {list.map((experience) => (
