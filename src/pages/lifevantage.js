@@ -1,22 +1,44 @@
-import * as React from "react"
-import { Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
-import { Row, Col, Image } from "react-bootstrap"
+import React, { useEffect, useRef } from "react";
+import { Link } from "gatsby";
+import { StaticImage } from "gatsby-plugin-image";
+import { Row, Col, Image } from "react-bootstrap";
+import Typed from "typed.js";
 
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import * as styles from "../components/index.module.css"
+import Layout from "../components/layout";
+import Seo from "../components/seo";
+import * as styles from "../components/index.module.css";
 
-import lineOrder from "../images/lineorder.gif"
+import lineOrder from "../images/lineorder.gif";
 
 const mainPageLinks = [
   { text: "หน้าแรก", url: "/" },
   { text: "ไลฟ์เวนเทจ", url: "/lifevantage" },
   { text: "งานวิจัย", url: "/research" },
   { text: "ประสบการณ์", url: "/experience" },
-]
+];
 
-const Lifevantage = () => (
+const Lifevantage = () => {
+  const el = useRef(null)
+  const typed = useRef(null)
+  useEffect(() => {
+    const options = {
+      strings: [
+        `จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่`,
+        `วิทยาศาสตร์เป็นเครื่องมือที่พิสูจน์ผลของการค้นคว้า Protandim® Nrf2 Synergizer®`,
+        `ซึ่งเป็นผลิตภัณฑ์ครั้งแรกที่ LifeVantage พัฒนาขึ้นและสร้างการเปลี่ยนแปลง`
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    };
+    typed.current = new Typed(el.current, options)
+
+    return () => {
+      typed.current.destroy()
+    }
+  },[]);
+
+  return (
   <Layout>
     <div className={styles.textCenter}>
     <Seo title="LifeVantage" />
@@ -37,7 +59,9 @@ const Lifevantage = () => (
         style={{ marginBottom: `var(--space-3)` }}
       />
     </div>
-    <h1 className={styles.textCenter}>จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่</h1>
+    <div className="text">
+      <center><h3><span style={{whiteSpace: 'pre'}} ref={el} /></h3></center>
+    </div>
     <hr />
     
     <p><h4 style={{display: "inline-block"}}>ไลฟ์เวนเทจ</h4> เป็นบริษัทฯ ที่จดทะเบียนและจำหน่ายผลิตภัณฑ์เสริมอาหาร 
@@ -193,6 +217,7 @@ const Lifevantage = () => (
       </center>
     {/* Line Order Image */}
   </Layout>
-)
+  );
+}
 
-export default Lifevantage
+export default Lifevantage;

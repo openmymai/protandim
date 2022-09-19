@@ -2,6 +2,7 @@ import React, { useState, useRef, useEffect } from "react";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import { StaticImage } from "gatsby-plugin-image";
 import { Row, Col, Image } from "react-bootstrap";
+import Typed from "typed.js";
 
 import Layout from "../components/layout";
 import Seo from "../components/seo";
@@ -19,6 +20,26 @@ const mainPageLinks = [
 
 
 const Research = () => {
+  const el = useRef(null)
+  const typed = useRef(null)
+  useEffect(() => {
+    const options = {
+      strings: [
+        `จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่`,
+        `วิทยาศาสตร์เป็นเครื่องมือที่พิสูจน์ผลของการค้นคว้า Protandim® Nrf2 Synergizer®`,
+        `ซึ่งเป็นผลิตภัณฑ์ครั้งแรกที่ LifeVantage พัฒนาขึ้นและสร้างการเปลี่ยนแปลง`
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+    };
+    typed.current = new Typed(el.current, options)
+
+    return () => {
+      typed.current.destroy()
+    }
+  },[]);
+  
   const data = useStaticQuery(graphql`
     query ResearchQuery {
       allResearchJson {
@@ -97,7 +118,9 @@ const Research = () => {
         style={{ marginBottom: `var(--space-3)` }}
       />
     </div>
-    <h1 className={styles.textCenter}>จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่</h1>
+    <div className="text">
+      <center><h3><span style={{whiteSpace: 'pre'}} ref={el} /></h3></center>
+    </div>
     <hr />
 
     <p>วันนี้ ไลฟ์เวนเทจเป็นบริษัท นูเเทร็กซูติคอล ที่กำลังขยายตัวบนพื้นฐานทางวิทยาศาสตร์ เรามีความมุ่งมั่นที่จะช่วยให้ผู้คนมีสุขภาพที่ดี 
