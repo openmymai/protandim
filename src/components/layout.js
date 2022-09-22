@@ -30,9 +30,7 @@ const Layout = ({ children }) => {
   useEffect(() => {
     const options = {
       strings: [
-        `จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่`,
-        `วิทยาศาสตร์พิสูจน์ผลของการค้นคว้า Protandim® Nrf2 Synergizer®`,
-        `ซึ่งเป็นครั้งแรกที่ LifeVantage พัฒนาขึ้นและสร้างการเปลี่ยนแปลง`
+        `จุดเริ่มต้นเล็กๆ สร้างฝันที่ยิ่งใหญ่`
       ],
       typeSpeed: 50,
       backSpeed: 30,
