@@ -7,6 +7,7 @@ import Layout from "../components/layout";
 import Seo from "../components/seo";
 
 import lineOrder from "../images/lineorder.gif";
+import loadingImage from "../images/loadinggif.gif";
 
 const Experience = () => {
   const data = useStaticQuery(graphql`
@@ -23,11 +24,8 @@ const Experience = () => {
   const allExperience = data.allExperienceJson.nodes
 
   const [ list, setList ] = useState([...allExperience.slice(0, 12)]);
-
   const [ loadMore, setLoadMore ] = useState(false);
-
   const [ hasMore, setHasMore ] = useState(allExperience.length > 12)
-
   const loadRef = useRef();
 
   const handleObserver = (entities) => {
@@ -85,7 +83,12 @@ const Experience = () => {
         </Col>
       ))}
     <div ref={loadRef}>
-      {hasMore ? <p>Loading...</p> : <p></p>}
+      {hasMore ? <Image
+            src={loadingImage}
+            alt=""
+            fluid
+            width={500}
+          /> : <p></p>}
     </div>
     </Row>
     
