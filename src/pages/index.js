@@ -176,36 +176,7 @@ const IndexPage = () => {
     </Row>
     <br />
     <hr />
-    <Row xs={1} md={1}>
-      <Col>
-        <StaticImage
-          src="../images/meatlfvnth.jpg"
-          formats={["auto", "webp", "avif"]}
-          alt=""
-          layout="fullWidth"
-          style={{ marginBottom: `var(--space-3)` }}
-        />
-        <br />
-        <hr />
-        <h3>✅ สินค้าดีตอบโจทย์ ดีใจที่เห็นทุกท่านสุขภาพดีครับ</h3>
-        <h3>✅ ผมทานเองและให้ครอบครัวคนที่เรารักได้ทานด้วย</h3>
-        <h3>✅ ทานแล้วเห็นผลชัดเจน</h3>
-        <h3>✅ ส่งทั่วประเทศนะครับ</h3>
-        <h3>✅ สนใจปรึกษาสอบถามได้นะครับ</h3>
-        <h4>สอบถามผ่านไลน์...คลิก</h4> 
-        <a href="https://lin.ee/PdT5d43" target="_blank" rel="noopener noreferrer">
-          <StaticImage
-            src="../images/linemai.png"
-            width={300}
-            quality={100}
-            formats={["auto", "webp", "avif"]}
-            alt=""
-            style={{ marginBottom: `var(--space-3)` }}
-          /> 
-        </a>
-        <h3>โทร: (065) 993 2500</h3>  
-      </Col>
-    </Row>
+    
 
     {/* Line Order Image */}
       <center>
