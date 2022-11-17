@@ -77,3 +77,7 @@ blockquote *:last-child {
 li *:last-child {
   margin-bottom: 0;
 }
+
+.imgcenter {
+  margin: auto;
+}

@@ -83,12 +83,12 @@ const Experience = () => {
         </Col>
       ))}
     <div ref={loadRef}>
-      {hasMore ? <Image
+      {hasMore ? <div className="imgcenter"><Image
             src={loadingImage}
             alt=""
             fluid
             width={500}
-          /> : <p></p>}
+          /></div> : <p></p>}
     </div>
     </Row>
     
